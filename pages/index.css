@@ -252,7 +252,8 @@ span {
   padding: 15px 20px;
 }
 
-.form__input_box {
+.form__input_margin,
+.form__button_margin {
   margin-bottom: 32px;
 }
 
