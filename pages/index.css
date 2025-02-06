@@ -123,9 +123,8 @@ span {
   background-color: #0a2750;
   background-image: url("../images/background_recipes.svg");
   background-repeat: no-repeat;
-  background-position: center 30%;
+  background-position: center center;
   background-size: cover;
-  height: 800px;
 }
 
 .recipes__title {
@@ -185,4 +184,129 @@ span {
   font-size: 20px;
   line-height: 30px;
   color: #fff;
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: center;
+}
+
+.reservation__title {
+  margin: 0 0;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  padding-top: 100px;
+}
+
+.reservation__form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  max-width: 385px;
+  align-items: center;
+}
+
+.form__fieldset {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0;
+  padding: 0 0;
+  border: 1px;
+  border-color: #838383;
+  width: 385px;
+}
+
+.form__label {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+  padding-bottom: 8px;
+}
+
+.form__input {
+  max-width: 385px;
+  height: 40px;
+  border-radius: 4px;
+  border-color: #838383;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000;
+  padding: 15px 20px;
+}
+
+.form__input_box {
+  margin-bottom: 32px;
+}
+
+.form__input::placeholder {
+  color: #838383;
+}
+
+.form__button {
+  width: 100%;
+  background-color: #1878dc;
+  border-radius: 4px;
+  border-color: #838383;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  padding: 20px 0;
+  transition: background-color 0.3s;
+}
+
+.form__button:hover {
+  background-color: #3f96f3;
+}
+
+.form__fieldset:last-of-type {
+  margin-bottom: 120px;
+}
+
+.form__label_checkbox {
+  display: inline-flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 0 0;
+  max-width: fit-content;
+  align-self: center;
+}
+
+.form__checkbox {
+  appearance: none;
+}
+
+.form__checkbox_styled {
+  border: solid 1px #838383;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+}
+
+.form__checkbox_styled:hover {
+  box-shadow: 0 0 2px;
+}
+.form__checkbox_styled:checked {
+  background-color: #1878dc;
+  background-image: url("../images/check.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
