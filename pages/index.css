@@ -207,12 +207,15 @@ span {
   padding-top: 100px;
 }
 
-.reservation__form {
+.form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.reservation__form {
   padding-top: 80px;
   max-width: 385px;
-  align-items: center;
 }
 
 .form__fieldset {
