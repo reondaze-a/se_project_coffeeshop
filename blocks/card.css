@@ -6,13 +6,16 @@
   padding: 0 0;
 }
 
+.card__menu_title {
+  padding-bottom: 32px;
+}
+
 .card__title {
   font-family: "Inter";
   font-style: normal;
   font-weight: bold;
   font-size: 20px;
   line-height: 30px;
-  padding-bottom: 32px;
 }
 
 .card__list-item {
