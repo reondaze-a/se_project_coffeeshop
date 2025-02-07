@@ -73,10 +73,12 @@
 
         <!-- Header footer start-->
         <div class="header__footer">
-          <p class="header__paragraph">Hours:</p>
-          <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
-          <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
-          <p class="header__paragraph">
+          <div class="header__footer-column">
+            <p class="header__paragraph">Hours:</p>
+            <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
+            <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
+          </div>
+          <p class="header__paragraph header__paragraph_position_absolute">
             200 Success Avenue, The Town of Triple Peaks
           </p>
         </div>
@@ -94,7 +96,7 @@
             <span>your home-brewing convenience:</span>
           </p>
 
-          <div class="recipes__videos">
+          <ul class="recipes__videos">
             <iframe
               src="https://www.youtube.com/embed/j6VlT_jUVPc?si=ZBEUDWB7fJWrr2tp"
               title="YouTube video player"
@@ -121,7 +123,7 @@
               <p class="recipes__video-caption">French press recipe</p>
               <p class="recipes__video-caption">~15 min</p>
             </div>
-          </div>
+          </ul>
         </section>
         <!--Recipes end-->
 
@@ -175,18 +177,14 @@
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <button type="submit" class="form__button form__button_margin">
+              <button type="submit" class="form__button form__input_margin">
                 Book a table
               </button>
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <label class="form__label form__label_checkbox">
-                <input
-                  type="checkbox"
-                  class="form__checkbox form__checkbox_styled"
-                  required
-                />
+              <label class="form__label form__label_type_checkbox">
+                <input type="checkbox" class="form__checkbox" required />
                 I agree with the terms of use
               </label>
             </fieldset>
@@ -205,10 +203,9 @@
           <!--Menu cards-->
           <div class="menu__cards">
             <!--Filter Menu-->
-            <ul class="card menu_card">
-              <li class="card__menu_title">
-                <p class="card__title">Filter</p>
-              </li>
+            <ul class="card">
+              <h3 class="card__title">Filter</h3>
+
               <li class="card__list-item">
                 Regular (12 oz)
                 <span class="card__list-divider"></span>
@@ -238,10 +235,8 @@
             <!--Filter Menu-->
 
             <!--Espresso Menu-->
-            <ul class="card menu_card">
-              <li class="card__menu_title">
-                <p class="card__title">Espresso</p>
-              </li>
+            <ul class="card">
+              <h3 class="card__title">Espresso</h3>
 
               <li class="card__list-item">
                 Macchiato
@@ -267,10 +262,8 @@
             <!--Espresso Menu-->
 
             <!--Baked Goods Menu-->
-            <ul class="card menu_card">
-              <li class="card__menu_title">
-                <p class="card__title">Baked Goods</p>
-              </li>
+            <ul class="card">
+              <h3 class="card__title">Baked Goods</h3>
 
               <li class="card__list-item">
                 Almond Croissant
@@ -349,7 +342,7 @@
             <div class="footer__social-heading">Social media</div>
 
             <ul class="footer__list">
-              <li class="footer_list-item">
+              <li class="footer__list-item">
                 <a href="https://www.facebook.com" class="footer__social-link">
                   <img
                     src="./images/facebook_white.svg"
@@ -360,7 +353,7 @@
                 </a>
               </li>
 
-              <li class="footer_list-item">
+              <li class="footer__list-item">
                 <a href="https://www.instagram.com" class="footer__social-link">
                   <img
                     src="./images/instagram_white.svg"

@@ -11,16 +11,17 @@
 
 .menu__title {
   padding-top: 100px;
-  font-family: "Inter";
+  font-family: "Inter", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   max-width: 780px;
+  margin: 0 0;
 }
 
 .menu__subtitle {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -28,6 +29,7 @@
   text-align: center;
   max-width: 780px;
   padding-top: 24px;
+  margin: 0 0;
 }
 
 .menu__cards {

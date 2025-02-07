@@ -22,13 +22,15 @@
 }
 
 .about__title {
-  font-family: "Inter";
+  font-family: "Inter", Arial, Helvetica, sans-serif; /* You specified in another comment that fonts are inherited already so there's no use in applying it again? */
   font-style: normal;
   font-weight: 500;
   font-size: 44px;
   line-height: 52px;
   align-self: flex-start;
+  max-width: 251px;
   z-index: 1;
+  margin: 0 0;
 }
 
 .about__content {
@@ -44,11 +46,12 @@
 }
 
 .about__paragraph {
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
+  margin: 0 0;
 }
 
 .about__circle {
