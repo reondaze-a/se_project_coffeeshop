@@ -78,7 +78,7 @@
             <p class="header__paragraph">Monday – Friday (10:00 – 19:00)</p>
             <p class="header__paragraph">Saturday – Sunday (11:00 – 18:00)</p>
           </div>
-          <p class="header__paragraph header__paragraph_position_absolute">
+          <p class="header__paragraph">
             200 Success Avenue, The Town of Triple Peaks
           </p>
         </div>
@@ -96,7 +96,7 @@
             <span>your home-brewing convenience:</span>
           </p>
 
-          <ul class="recipes__videos">
+          <div class="recipes__videos">
             <iframe
               src="https://www.youtube.com/embed/j6VlT_jUVPc?si=ZBEUDWB7fJWrr2tp"
               title="YouTube video player"
@@ -123,7 +123,7 @@
               <p class="recipes__video-caption">French press recipe</p>
               <p class="recipes__video-caption">~15 min</p>
             </div>
-          </ul>
+          </div>
         </section>
         <!--Recipes end-->
 
@@ -139,7 +139,7 @@
                 type="text"
                 id="name"
                 name="name"
-                class="form__input form__input_margin"
+                class="form__input"
                 placeholder="Name Surname"
                 required
               />
@@ -151,7 +151,7 @@
                 type="number"
                 id="number-of-guests"
                 name="number-of-guests"
-                class="form__input form__input_margin"
+                class="form__input"
                 placeholder="1-8"
                 required
               />
@@ -161,7 +161,7 @@
                 type="datetime-local"
                 id="date"
                 name="date"
-                class="form__input form__input_margin"
+                class="form__input"
                 required
               />
 
@@ -170,16 +170,14 @@
                 type="email"
                 id="email"
                 name="email"
-                class="form__input form__input_margin"
+                class="form__input"
                 placeholder="email@email.com"
                 required
               />
             </fieldset>
 
             <fieldset class="form__fieldset">
-              <button type="submit" class="form__button form__input_margin">
-                Book a table
-              </button>
+              <button type="submit" class="form__button">Book a table</button>
             </fieldset>
 
             <fieldset class="form__fieldset">
@@ -203,99 +201,102 @@
           <!--Menu cards-->
           <div class="menu__cards">
             <!--Filter Menu-->
-            <ul class="card">
+            <div class="card">
               <h3 class="card__title">Filter</h3>
-
-              <li class="card__list-item">
-                Regular (12 oz)
-                <span class="card__list-divider"></span>
-                $1
-              </li>
-              <li class="card__list-item">
-                Large (16 oz)
-                <span class="card__list-divider"></span>
-                $1.25
-              </li>
-              <li class="card__list-item">
-                XL (20 oz)
-                <span class="card__list-divider"></span>
-                $1.5
-              </li>
-              <li class="card__list-item">
-                Party-size (24 oz, decaf)
-                <span class="card__list-divider"></span>
-                $1.75
-              </li>
-              <li class="card__list-item">
-                Iced Coffee (16 oz)
-                <span class="card__list-divider"></span>
-                $1.25
-              </li>
-            </ul>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Regular (12 oz)
+                  <span class="card__list-divider"></span>
+                  $1
+                </li>
+                <li class="card__list-item">
+                  Large (16 oz)
+                  <span class="card__list-divider"></span>
+                  $1.25
+                </li>
+                <li class="card__list-item">
+                  XL (20 oz)
+                  <span class="card__list-divider"></span>
+                  $1.5
+                </li>
+                <li class="card__list-item">
+                  Party-size (24 oz, decaf)
+                  <span class="card__list-divider"></span>
+                  $1.75
+                </li>
+                <li class="card__list-item">
+                  Iced Coffee (16 oz)
+                  <span class="card__list-divider"></span>
+                  $1.25
+                </li>
+              </ul>
+            </div>
             <!--Filter Menu-->
 
             <!--Espresso Menu-->
-            <ul class="card">
+            <div class="card">
               <h3 class="card__title">Espresso</h3>
-
-              <li class="card__list-item">
-                Macchiato
-                <span class="card__list-divider"></span>
-                $2.25
-              </li>
-              <li class="card__list-item">
-                Cortado
-                <span class="card__list-divider"></span>
-                $2.5
-              </li>
-              <li class="card__list-item">
-                Mocha
-                <span class="card__list-divider"></span>
-                $3
-              </li>
-              <li class="card__list-item">
-                Sunrise in the Bay Area (decaf)
-                <span class="card__list-divider"></span>
-                $10
-              </li>
-            </ul>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Macchiato
+                  <span class="card__list-divider"></span>
+                  $2.25
+                </li>
+                <li class="card__list-item">
+                  Cortado
+                  <span class="card__list-divider"></span>
+                  $2.5
+                </li>
+                <li class="card__list-item">
+                  Mocha
+                  <span class="card__list-divider"></span>
+                  $3
+                </li>
+                <li class="card__list-item">
+                  Sunrise in the Bay Area (decaf)
+                  <span class="card__list-divider"></span>
+                  $10
+                </li>
+              </ul>
+            </div>
             <!--Espresso Menu-->
 
             <!--Baked Goods Menu-->
-            <ul class="card">
+            <div class="card">
               <h3 class="card__title">Baked Goods</h3>
-
-              <li class="card__list-item">
-                Almond Croissant
-                <span class="card__list-divider"></span>
-                $2
-              </li>
-              <li class="card__list-item">
-                Banana Bread
-                <span class="card__list-divider"></span>
-                $1.75
-              </li>
-              <li class="card__list-item">
-                Key Lime Pie
-                <span class="card__list-divider"></span>
-                $3
-              </li>
-              <li class="card__list-item">
-                Blue Velvet Cake
-                <span class="card__list-divider"></span>
-                $3.75
-              </li>
-              <li class="card__list-item">
-                Web Cookie
-                <span class="card__list-divider"></span>
-                $2
-              </li>
-              <li class="card__list-item">
-                Fresh Bug'uette
-                <span class="card__list-divider"></span>
-                $0.25
-              </li>
-            </ul>
+              <ul class="card__list">
+                <li class="card__list-item">
+                  Almond Croissant
+                  <span class="card__list-divider"></span>
+                  $2
+                </li>
+                <li class="card__list-item">
+                  Banana Bread
+                  <span class="card__list-divider"></span>
+                  $1.75
+                </li>
+                <li class="card__list-item">
+                  Key Lime Pie
+                  <span class="card__list-divider"></span>
+                  $3
+                </li>
+                <li class="card__list-item">
+                  Blue Velvet Cake
+                  <span class="card__list-divider"></span>
+                  $3.75
+                </li>
+                <li class="card__list-item">
+                  Web Cookie
+                  <span class="card__list-divider"></span>
+                  $2
+                </li>
+                <li class="card__list-item">
+                  Fresh Bug'uette
+                  <span class="card__list-divider"></span>
+                  $0.25
+                </li>
+              </ul>
+            </div>
             <!--Baked Goods Menu-->
           </div>
           <!--Menu cards end-->

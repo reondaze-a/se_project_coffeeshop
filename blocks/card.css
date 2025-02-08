@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   width: 540px;
-  list-style-type: none;
   padding: 0 0;
   margin: 0 0;
 }
@@ -14,6 +13,12 @@
   font-size: 20px;
   line-height: 30px;
   padding-bottom: 32px;
+  margin: 0 0;
+}
+
+.card__list {
+  list-style-type: none;
+  padding: 0 0;
   margin: 0 0;
 }
 

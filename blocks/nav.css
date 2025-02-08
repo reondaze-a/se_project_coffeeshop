@@ -14,10 +14,13 @@
   display: flex;
   list-style: none;
   padding-right: 80px;
+  margin: 0 0;
+  padding-left: 0;
+  gap: 20px;
 }
 
 .nav__item {
-  padding-left: 20px;
+  display: flex;
 }
 
 .nav__link {
